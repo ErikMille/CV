@@ -1,0 +1,144 @@
+*{box-sizing: border-box}
+body{
+    margin: 0px;
+    background-color: aqua;
+}
+img{
+    width: 3rem;
+    margin: 0rem auto;
+}
+h1{
+    max-width: 30rem;
+    color: white;
+    position: relative;
+    bottom:3vw;
+}
+h2{
+    color: turquoise;
+    margin: 3rem;
+}
+h3{
+    color: turquoise;
+}
+p{
+    max-width: 40rem;
+}
+.pic{
+    
+}
+.navi{
+    display: flex; 
+    flex-direction: row;  
+    align-items:flex-start;
+    justify-content:flex-end;    
+    margin: 0rem auto 0rem;
+    padding-bottom: 3rem;
+    max-width: 50rem;
+    background-color: #aaaaaa;    
+}
+.tab{
+    padding-top:1rem;
+    padding-bottom: 1rem;
+    width: 15%; 
+    background-color: #555555;
+    border-right: 1px solid turquoise; 
+    border-left: 1px solid turquoise;
+    color: turquoise;
+    text-align: center;
+}
+.heading{
+    display: flex; 
+    flex-direction: row;  
+    align-items:center;
+    justify-content:center; 
+    background-image: url(https://cdn.pixabay.com/photo/2019/05/01/09/56/drop-of-water-4170406_1280.jpg);
+    background-size: cover;
+    height: 25vw;
+
+}
+.sec1{
+    display: flex; 
+    flex-direction: row;  
+    align-items:center;
+    justify-content:center;
+    /* padding-bottom: 3rem;
+    padding-top: 3rem; */
+    padding:  3rem 5rem 3rem 5em;
+    margin: 0rem auto 0rem;
+    max-width: 50rem;
+    background-color: #aaaaaa;     
+}
+/********************************************/
+.sec2{
+    display: flex; 
+    flex-direction: row;  
+    align-items:center;
+    justify-content:space-around;
+    /* padding-bottom: 3rem;
+    padding-top: -3rem; */
+    padding:  0rem 5rem 2rem 5em;
+    margin: 0rem auto 0rem;
+    max-width: 50rem;
+    background-color: #000000;    
+}
+.proin{
+    display: flex; 
+    flex-direction: column;  
+    align-items:center;
+    justify-content:center;
+    text-align: center;
+    flex-grow: 1;
+    padding: 0rem 0.5rem 0rem;
+    /* border:1px solid yellow; */
+}
+.round{
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+    background-color: #AAAAAA;
+    margin-top: -3rem;
+}
+/*************************************************/
+.sec3{
+    display: flex; 
+    flex-direction: column;  
+    align-items:center;
+    justify-content: flex-start;
+    padding:  0rem 5rem 2rem 5em;
+    margin: 0rem auto 0rem;
+    max-width: 50rem;
+    background-color: #FFFFFF;
+}
+
+.name{
+    text-align: center;
+    line-height: 2.5rem;
+    width: 6rem;
+    height: 2.5rem;
+    margin: 0rem;
+    background-color: #555555;
+    color:white;
+}
+.scale{
+    display: flex;    
+    width: 40rem;
+    flex-grow: 1;
+    height: 2.5rem;
+    margin-bottom: 0.5rem;
+    background-color: green;
+    justify-content: stretch;
+}
+.scal{
+    display: flex;  
+    flex-grow: 1;  
+    height: 2.5rem;
+    margin: 0rem;
+    background-color: #AAAAAA;
+}
+.val{
+    display: block;   
+    height: 2.5rem;
+    width: 75%;
+    margin: 0rem;
+    background-color: turquoise;
+}
