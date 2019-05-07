@@ -1,0 +1,209 @@
+*{box-sizing: border-box}
+html{
+    font-size: 18px;
+    font-family: sans-serif;
+}
+body{
+    margin: 0px;
+    background-color: aqua;
+}
+// img{
+//     width: 3rem;
+//     margin: 0rem auto;
+// }
+h1{
+    max-width: 30rem;
+    color: white;
+    position: relative;
+    bottom:3vw;
+}
+h2{
+    color: turquoise;
+    margin: 2rem;
+}
+h3{
+    color: turquoise;
+}
+p{
+    max-width: 40rem;
+}
+.pic{
+    
+}
+nav{
+    display: flex; 
+    flex-direction: row;  
+    align-items:stretch;
+    justify-content:flex-end;    
+    margin: 0rem auto 0rem;
+    padding-bottom: 3rem;
+    max-width: 50rem;
+    background-color: #aaaaaa;    
+}
+.tab{
+    padding-top:1rem;
+    padding-bottom: 1rem;
+    width: 15%; 
+    @media screen and (max-width:500px){flex-grow: 1; width: fit-content; font-size:0.7rem;}
+    background-color: #555555;
+    border-right: 1px solid turquoise; 
+    border-left: 1px solid turquoise;
+    color: turquoise;
+    text-align: center;
+    overflow: hidden;
+}
+.heading{
+    display: flex; 
+    flex-direction: row;  
+    align-items:center;
+    justify-content:center; 
+    background-image: url(https://cdn.pixabay.com/photo/2019/05/01/09/56/drop-of-water-4170406_1280.jpg);
+    background-size: cover;
+    height: 25vw;
+    @media screen and (max-width:460px){height: 7rem; padding: 1rem;}
+}
+.sec1{
+    display: flex; 
+    flex-direction: row;  
+    align-items:center;
+    justify-content:center;
+    /* padding-bottom: 3rem;
+    padding-top: 3rem; */
+    padding:  3rem 1rem 3rem 1rem;
+    margin: 0rem auto 0rem;
+    max-width: 50rem;
+    background-color: #aaaaaa;     
+}
+/********************************************/
+.sec2{
+    display: flex; 
+    flex-direction: row;  
+    justify-content:space-around;
+    flex-wrap: wrap;
+    margin: 0rem auto 0rem;
+    max-width: 50rem;
+    background-color: #000000; 
+    
+}
+.proin{
+    display: flex; 
+    flex-direction: column;  
+    align-items:center;
+    text-align: center;
+    padding: 0rem 0.5rem 0rem;
+    border:1px solid yellow;
+    width: 20%;
+    margin: 0;
+    @media screen and (max-width:700px){flex-basis: 47%;}
+    @media screen and (max-width:400px){flex-basis: 97%;}
+}
+.round{
+    @media screen and (max-width:700px){display: none;}
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+    background-color: #AAAAAA;
+    margin-top: -3rem;
+}
+/*************************************************/
+.sec3{
+    display: flex; 
+    flex-direction: column;  
+    align-items:center;
+    justify-content: flex-start;
+    padding:  0rem 0rem 2rem 0rem;
+    margin: 0rem auto 0rem;
+    max-width: 50rem;
+    background-color: #FFFFFF;
+}
+
+
+
+.scale{
+    display: flex;    
+    width: 90%;
+    flex-grow: 1;
+    height: 2.5rem;
+    margin-bottom: 0.5rem;
+    background-color: green;
+    justify-content: stretch;
+}
+.name{
+    text-align: center;
+    line-height: 2.5rem;
+    width: 6rem;
+    height: 2.5rem;
+    margin: 0rem;
+    background-color: #555555;
+    color:white;
+}
+.scal{
+    display: flex;  
+    flex-grow: 1;  
+    height: 2.5rem;
+    margin: 0rem;
+    background-color: #AAAAAA;
+}
+.val{
+    display: block;   
+    height: 2.5rem;
+    width: 75%;
+    margin: 0rem;
+    background-color: turquoise;
+}
+
+/*********************************************/
+
+.sec4{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding:  0rem 3rem 2rem 3em;
+    margin: 0rem auto 0rem;
+    max-width: 50rem;
+    background-color: turquoise;
+    flex-wrap: wrap;
+    h2{
+        color:white;
+        text-align: center;
+    }
+    div{
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        border: 2px solid red;
+        padding: 1rem;
+        div{
+            height: 100px;
+            flex-basis: 30%;
+            margin: 0.5rem 0 0.5rem 0;
+            @media screen and (max-width:850px){flex-basis: 45%}
+            @media screen and (max-width:400px){flex-basis: 98%}        
+        }
+    }
+}
+
+/**********************************************/
+.sec5{
+    display: flex; 
+    flex-direction: column;  
+    align-items:center;
+    justify-content: flex-start;
+    padding:  0rem 3rem 2rem 3em;
+    margin: 0rem auto 0rem;
+    max-width: 50rem;
+    background-color: #FFFFFF;
+    div{
+        display: flex;
+        align-items: center;
+        p{margin: 1rem}
+        img{
+            border-radius: 50%;
+            height: 18vw;
+            width: 18vw;
+            flex-grow: 1;
+            margin: 1rem;
+        }
+    }
+}
