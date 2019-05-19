@@ -47,20 +47,20 @@ function cleanAssets(done) {
         { force: true }
     );
 }
-
+ 
 // publish HTML files src into dist
 function publishHtml(done) {
   return gulp.src('src/**/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('dist'));
 }
-
+ 
 // Copy all fonts from src/fonts into dist
 function publishFonts(done) {
     return gulp.src('src/fonts/**/*')
       .pipe(gulp.dest('dist/fonts'));
 }
-
+ 
 // Copy all images from src/img into dist
 function publishImages(done) {
   return gulp.src('src/img/**/*')
@@ -80,8 +80,6 @@ function compileScss(done) {
       .pipe(sourcemaps.write('.'))
       .pipe(gulp.dest('dist/css'));
 }
-
-
  
 // watch files
 function watchFiles(done) {
@@ -90,7 +88,7 @@ function watchFiles(done) {
     gulp.watch("src/img/**/*", gulp.series(publishImages, reload));
     gulp.watch("src/scss/**/*.scss", gulp.series(compileScss, reload));
 }
-
+ 
 // browserSync server
 function serve(done) {
     browsersync_server.init({
@@ -100,7 +98,7 @@ function serve(done) {
     });
     done();
 }
-
+ 
 // browserSync reload
 function reload(done) {
     browsersync_server.reload();
@@ -109,4 +107,5 @@ function reload(done) {
  
 // export tasks
 exports.structure = createStructure;
+exports.dev = gulp.series(cleanAssets, publishHtml, publishFonts, publishImages, compileScss);
 exports.watch = gulp.series(cleanAssets, publishHtml, publishFonts, publishImages, compileScss, serve, watchFiles);

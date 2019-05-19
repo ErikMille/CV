@@ -1,5 +1,5 @@
 {
-  "name": "project-name",
+  "name": "gulp-scss",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,12 +10,16 @@
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.5",
-    "del": "^3.0.0",
-    "gulp": "^4.0.0",
-    "gulp-autoprefixer": "^6.0.0",
+    "del": "^4.1.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
     "gulp-csso": "^3.0.1",
     "gulp-htmlmin": "^5.0.1",
     "gulp-sass": "^4.0.2",
-    "gulp-sourcemaps": "^2.6.4"
+    "gulp-sourcemaps": "^2.6.5",
+    "tar": "^4.4.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1"
   }
 }
